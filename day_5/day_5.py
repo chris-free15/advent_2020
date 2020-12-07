@@ -81,7 +81,6 @@ def find_my_seat_id(matrix):
     row = 0
     for line in matrix:
         if valid_positioning(line):
-            print("line: {}".format(line))
             col = find_col(line)
             return row * 8 + col
         row += 1
